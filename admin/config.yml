@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Image upload settings - tells CMS where to store images
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", default: "" }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      # 👇 NEW: Image upload field for her posts 👇
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

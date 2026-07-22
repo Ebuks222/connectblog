@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Connect Blog — Admin</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,500;0,600&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #f5f3f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 24px;
+        }
+        
+        .admin-wrapper {
+            background: #ffffff;
+            padding: 48px 48px 44px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 8px 40px rgba(26, 26, 26, 0.08);
+            border-left: 6px solid #8b1a2b;
+            text-align: center;
+        }
+        
+        .admin-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .admin-logo .icon {
+            width: 52px;
+            height: 52px;
+            background: #8b1a2b;
+            color: #ffffff;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .admin-logo .text {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            letter-spacing: -0.02em;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        
+        .admin-logo .text span {
+            font-weight: 300;
+            color: #6b6b6b;
+        }
+        
+        .admin-wrapper h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 24px 0 10px;
+            color: #1a1a1a;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        
+        .admin-wrapper .sub {
+            color: #5a5a5a;
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+        
+        .admin-wrapper .cms-container {
+            border: 1px solid rgba(26, 26, 26, 0.06);
+            border-radius: 8px;
+            overflow: hidden;
+            min-height: 480px;
+            background: #ffffff;
+        }
+        
+        .admin-wrapper .cms-container iframe {
+            width: 100%;
+            min-height: 550px;
+            border: none;
+        }
+        
+        .admin-footer {
+            margin-top: 24px;
+            font-size: 0.85rem;
+            color: #8b8b8b;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+        }
+        
+        .admin-footer span {
+            color: #8b1a2b;
+        }
+        
+        @media (max-width: 600px) {
+            .admin-wrapper {
+                padding: 32px 24px 28px;
+            }
+            .admin-wrapper h1 {
+                font-size: 1.6rem;
+            }
+            .admin-logo .text {
+                font-size: 1.3rem;
+            }
+            .admin-logo .icon {
+                width: 44px;
+                height: 44px;
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-wrapper">
+        
+        <div class="admin-logo">
+            <div class="icon">SC</div>
+            <div class="text">Security <span>Connect</span></div>
+        </div>
+        
+        <h1>Content Management</h1>
+        <p class="sub">Publish intelligence briefings,<br />geopolitical analysis, and strategic insights</p>
+        
+        <div class="cms-container">
+            <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+        </div>
+        
+        <div class="admin-footer"><span>●</span> Secure &bull; Private &bull; Your content only <span>●</span></div>
+        
+    </div>
+</body>
+</html>
